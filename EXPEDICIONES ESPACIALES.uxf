@@ -1,0 +1,45 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>390</y><w>210</w><h>200</h></coordinates><panel_attributes>Agencia Espacial
+--
+- nombreAgencia: String
+- listaNaves: List&lt;Nave&gt;
+--
++ mostrarNaves()
++ agregarNave(Nave nave)
++ iniciarExploracion()
++ cargarNave(AgenciaEspacial agencia)
++ elegirMision()
++ ordenarPorNombre()
++ ordenarPorAñoDesc()
++ ordenarPorTripulacion()
++ validarAnio()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>390</y><w>210</w><h>190</h></coordinates><panel_attributes>abstract Nave
+--
+# nombreNave: String
+# capacidadTripulacion: int
+# anioLanzamiento: int
+--
+# toString()
++ equals(Object o)
++ compareTo(Nave nave)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>160</y><w>210</w><h>190</h></coordinates><panel_attributes>Exploracion
+--
+- tipoMision: String
+--
++ toString()
++ explora()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>400</y><w>210</w><h>190</h></coordinates><panel_attributes>Carguero
+--
+-capacidadCarga: int
+--
++ toString()
++ explora()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>660</y><w>210</w><h>190</h></coordinates><panel_attributes>CruceroEstelar
+--
+cantidadPasajeros: int
+--
++ toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>240</y><w>210</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;250;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>490</y><w>210</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>510</y><w>210</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;250</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>470</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..1
+m2=0..n
+puede tener</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>1320</x><y>330</y><w>80</w><h>90</h></coordinates><panel_attributes>Explorador
+--
++ explora()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>240</y><w>220</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;200;10;200;110</additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>340</y><w>220</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;160;100;160;100;10;200;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>240</y><w>210</w><h>50</h></coordinates><panel_attributes>ComparadorPorAño
+--
++ compare(Nave nave1, Nave nave2)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>730</y><w>210</w><h>50</h></coordinates><panel_attributes>ComparadorPorTripulacion
+--
++ compare(Nave nave1, Nave nave2)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>280</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>580</y><w>40</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>20;10;10;150</additional_attributes></element></diagram>
