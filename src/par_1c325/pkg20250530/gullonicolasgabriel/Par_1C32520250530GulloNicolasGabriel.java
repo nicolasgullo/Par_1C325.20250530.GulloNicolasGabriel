@@ -4,8 +4,6 @@
  */
 package par_1c325.pkg20250530.gullonicolasgabriel;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Gullito
@@ -16,15 +14,15 @@ public class Par_1C32520250530GulloNicolasGabriel {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        
         
         int opcion;
         do {
             System.out.println("");
             System.out.println("");
             System.out.println("");
-            opcion = sc.nextInt();
-            sc.nextLine();
+            opcion = Entrada.sc.nextInt();
+            Entrada.sc.nextLine();
             
             switch (opcion){
                 case 1:
